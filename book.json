@@ -1,0 +1,72 @@
+{
+	"schemaVersion": "0.1.0",
+	"name": "Book",
+	"behavior": "create",
+	"noteContentFormat": "# {{title}}\n\n## Summary\n\n{{\"Summarize this book in bullet points based on the page description. What are the main themes and key ideas? Any references to people, places, or other books should be in [[wikilinks]] format.\"}}\n\n## Notes\n\n\n## Quotes\n\n\n## Review\n\n\n## Related\n*Link to concepts, other books, or notes that connect to ideas from this book.*\n- ",
+	"properties": [
+		{
+			"name": "title",
+			"value": "{{title}}",
+			"type": "text"
+		},
+		{
+			"name": "author",
+			"value": "{{author|wikilink}}",
+			"type": "multitext"
+		},
+		{
+			"name": "year",
+			"value": "",
+			"type": "text"
+		},
+		{
+			"name": "pages",
+			"value": "",
+			"type": "text"
+		},
+		{
+			"name": "rating",
+			"value": "",
+			"type": "text"
+		},
+		{
+			"name": "status",
+			"value": "to-read",
+			"type": "text"
+		},
+		{
+			"name": "genre",
+			"value": "",
+			"type": "text"
+		},
+		{
+			"name": "date_started",
+			"value": "",
+			"type": "date"
+		},
+		{
+			"name": "date_finished",
+			"value": "",
+			"type": "date"
+		},
+		{
+			"name": "isbn",
+			"value": "",
+			"type": "text"
+		},
+		{
+			"name": "tags",
+			"value": "book",
+			"type": "multitext"
+		}
+	],
+	"triggers": [
+		"goodreads.com",
+		"amazon.com/dp",
+		"amazon.ca/dp",
+		"app.thestorygraph.com"
+	],
+	"noteNameFormat": "{{title}}",
+	"path": "3 - Resources/Books",
+	"context": "{{content}}"
+}

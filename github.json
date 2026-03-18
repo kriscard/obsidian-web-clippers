@@ -1,0 +1,34 @@
+{
+	"schemaVersion": "0.1.0",
+	"name": "GitHub Repo",
+	"behavior": "create",
+	"noteContentFormat": "# Summary\n\n{{\"Summarize what this GitHub repository does, its key features, and use cases in bullet points. Any references to technologies, frameworks, or tools should be in [[wikilinks]] format.\"}}\n\n---\n\n# Installation\n\n{{\"Extract the installation or getting started instructions from the README. Format as a code block if applicable. If not found, write: See README for setup.\"}}\n\n---\n\n# Notes\n- \n\n---\n\n# Related\n- ",
+	"properties": [
+		{
+			"name": "tags",
+			"value": "clipping, github",
+			"type": "multitext"
+		},
+		{
+			"name": "author",
+			"value": "{{author|wikilink}}",
+			"type": "multitext"
+		},
+		{
+			"name": "source",
+			"value": "{{url}}",
+			"type": "text"
+		},
+		{
+			"name": "created",
+			"value": "{{date}}",
+			"type": "date"
+		}
+	],
+	"triggers": [
+		"github.com"
+	],
+	"noteNameFormat": "{{title}}",
+	"path": "0 - Inbox",
+	"context": "{{content}}"
+}

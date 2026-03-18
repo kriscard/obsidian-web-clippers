@@ -1,0 +1,35 @@
+{
+	"schemaVersion": "0.1.0",
+	"name": "Twitter Thread",
+	"behavior": "create",
+	"noteContentFormat": "# Summary\n\n{{\"Summarize the key insights from this Twitter/X thread in bullet points. Any references to people, places, or books should be in [[wikilinks]] format.\"}}\n\n---\n\n# Thread\n{{content}}\n\n---\n\n# Notes\n- \n\n---\n\n# Related\n- ",
+	"properties": [
+		{
+			"name": "author",
+			"value": "{{author|wikilink}}",
+			"type": "multitext"
+		},
+		{
+			"name": "source",
+			"value": "{{url}}",
+			"type": "text"
+		},
+		{
+			"name": "created",
+			"value": "{{date}}",
+			"type": "date"
+		},
+		{
+			"name": "tags",
+			"value": "clipping, twitter",
+			"type": "multitext"
+		}
+	],
+	"triggers": [
+		"https://x.com",
+		"https://twitter.com"
+	],
+	"noteNameFormat": "{{author}} - {{title|safe_name}}",
+	"path": "3 - Resources/Tweets",
+	"context": "{{content}}"
+}

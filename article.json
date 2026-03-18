@@ -1,0 +1,37 @@
+{
+	"schemaVersion": "0.1.0",
+	"name": "Article",
+	"behavior": "create",
+	"noteContentFormat": "# Summary\n\n{{\"Summarize the key points from this article in bullet points. Any titles, and references to people, places, or books should be in [[wikilinks]] format.\"}}\n\n# Notes\n*Your thoughts and highlights*\n\n{{content}}\n\n## Related\n*Link to concepts this connects to*\n- ",
+	"properties": [
+		{
+			"name": "tags",
+			"value": "clipping, article",
+			"type": "multitext"
+		},
+		{
+			"name": "author",
+			"value": "{{author|wikilink}}",
+			"type": "multitext"
+		},
+		{
+			"name": "source",
+			"value": "{{url}}",
+			"type": "text"
+		},
+		{
+			"name": "published",
+			"value": "{{published|date:YYYY-MM-DD}}",
+			"type": "date"
+		},
+		{
+			"name": "created",
+			"value": "{{date}}",
+			"type": "date"
+		}
+	],
+	"triggers": [],
+	"noteNameFormat": "{{title}}",
+	"path": "3 - Resources/Articles",
+	"context": "{{content}}"
+}
