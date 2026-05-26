@@ -29,6 +29,6 @@
 		"github.com"
 	],
 	"noteNameFormat": "{{title}}",
-	"path": "3 - Resources/GitHub",
+	"path": "0 - Inbox",
 	"context": "{{content}}"
 }

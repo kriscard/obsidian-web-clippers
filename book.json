@@ -67,6 +67,6 @@
 		"app.thestorygraph.com"
 	],
 	"noteNameFormat": "{{title}}",
-	"path": "3 - Resources/Books",
+	"path": "0 - Inbox",
 	"context": "{{content}}"
 }

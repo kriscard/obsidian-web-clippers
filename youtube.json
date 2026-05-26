@@ -44,6 +44,6 @@
 		"https://www.youtube.com/watch?v="
 	],
 	"noteNameFormat": "{{title}}",
-	"path": "3 - Resources/Videos",
+	"path": "0 - Inbox",
 	"context": "{{fullHtml|strip_tags:\"script,style,nav,footer,header\"|strip_attr}}"
 }

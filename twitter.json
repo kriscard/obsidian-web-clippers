@@ -30,6 +30,6 @@
 		"https://twitter.com"
 	],
 	"noteNameFormat": "{{author}} - {{title|safe_name}}",
-	"path": "3 - Resources/Tweets",
+	"path": "0 - Inbox",
 	"context": "{{content}}"
 }

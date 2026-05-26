@@ -6,15 +6,15 @@ Each template uses the **Interpreter** feature — an AI-powered step that summa
 
 ## Templates
 
-| Template | Triggers |
-|----------|----------|
-| **YouTube** | `youtube.com/watch` |
-| **Article** | Manual |
-| **Book** | Goodreads, Amazon, StoryGraph |
-| **Documentation** | Manual |
-| **GitHub** | `github.com` |
-| **Podcast** | Apple Podcasts, Spotify, Overcast, Pocket Casts |
-| **Twitter** | `x.com`, `twitter.com` |
+| Template          | Triggers                                        |
+| ----------------- | ----------------------------------------------- |
+| **YouTube**       | `youtube.com/watch`                             |
+| **Article**       | Manual                                          |
+| **Book**          | Goodreads, Amazon, StoryGraph                   |
+| **Documentation** | Manual                                          |
+| **GitHub**        | `github.com`                                    |
+| **Podcast**       | Apple Podcasts, Spotify, Overcast, Pocket Casts |
+| **Twitter**       | `x.com`, `twitter.com`                          |
 
 ## Setup
 

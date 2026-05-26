@@ -22,6 +22,6 @@
 	],
 	"triggers": [],
 	"noteNameFormat": "{{title}}",
-	"path": "3 - Resources/Coding",
+	"path": "0 - Inbox",
 	"context": "{{content}}"
 }

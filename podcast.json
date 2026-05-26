@@ -32,6 +32,6 @@
 		"https://pocketcasts.com"
 	],
 	"noteNameFormat": "{{title|safe_name}}",
-	"path": "3 - Resources/Podcasts",
+	"path": "0 - Inbox",
 	"context": "{{content}}"
 }

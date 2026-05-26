@@ -32,6 +32,6 @@
 	],
 	"triggers": [],
 	"noteNameFormat": "{{title}}",
-	"path": "3 - Resources/Articles",
+	"path": "0 - Inbox",
 	"context": "{{content}}"
 }
