@@ -1,49 +1,47 @@
 {
-	"schemaVersion": "0.1.0",
-	"name": "YouTube",
-	"behavior": "create",
-	"noteContentFormat": "![{{schema:name}}]({{url}})\n\n# {{title}}\n\n{{description}}\n\n## AI Highlights:\n{{\"Summarize the key points from this YouTube video and transcript in bullet points. Any titles, and references to people, places, or books should be in [[wikilinks]] format. If a transcript is available, use it as the primary source.\"}}\n\n## Transcript:\n{{\"Extract the full transcript from the page content. Format it as plain text with timestamps if available. If no transcript is found, write: No transcript available.\"}}",
-	"properties": [
-		{
-			"name": "title",
-			"value": "{{title}}",
-			"type": "text"
-		},
-		{
-			"name": "image",
-			"value": "{{image}}",
-			"type": "text"
-		},
-		{
-			"name": "author",
-			"value": "{{schema:author|wikilink}}",
-			"type": "multitext"
-		},
-		{
-			"name": "published",
-			"value": "{{schema:uploadDate|date:YYYY-MM-DD}}",
-			"type": "date"
-		},
-		{
-			"name": "source",
-			"value": "{{url}}",
-			"type": "text"
-		},
-		{
-			"name": "created",
-			"value": "{{date}}",
-			"type": "date"
-		},
-		{
-			"name": "tags",
-			"value": "clipping, youtube",
-			"type": "multitext"
-		}
-	],
-	"triggers": [
-		"https://www.youtube.com/watch?v="
-	],
-	"noteNameFormat": "{{title}}",
-	"path": "0 - Inbox",
-	"context": "{{fullHtml|strip_tags:\"script,style,nav,footer,header\"|strip_attr}}"
+  "schemaVersion": "0.1.0",
+  "name": "YouTube",
+  "behavior": "create",
+  "noteContentFormat": "![{{schema:name}}]({{url}})\n\n# {{schema:name ?? title}}\n\n## Summary\n\n{{\"Summarize the key points of this video as concise bullet points. Put any people, tools, books, or technologies in [[wikilink]] format. If the page text is insufficient, write: Needs manual review.\"}}\n\n## Notes\n- ",
+  "properties": [
+    {
+      "name": "title",
+      "value": "{{schema:name ?? title}}",
+      "type": "text"
+    },
+    {
+      "name": "image",
+      "value": "{{schema:thumbnailUrl|slice:0}}",
+      "type": "text"
+    },
+    {
+      "name": "author",
+      "value": "{{schema:author|wikilink}}",
+      "type": "multitext"
+    },
+    {
+      "name": "published",
+      "value": "{{schema:uploadDate|date:\"YYYY-MM-DD\"}}",
+      "type": "date"
+    },
+    {
+      "name": "source",
+      "value": "{{url}}",
+      "type": "text"
+    },
+    {
+      "name": "created",
+      "value": "{{date|date:\"YYYY-MM-DD\"}}",
+      "type": "date"
+    },
+    {
+      "name": "tags",
+      "value": "clipping, youtube",
+      "type": "multitext"
+    }
+  ],
+  "triggers": ["https://www.youtube.com/watch?v="],
+  "noteNameFormat": "{{schema:name ?? title}}",
+  "path": "0 - Inbox",
+  "context": "{{content}}"
 }
