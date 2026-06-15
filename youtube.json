@@ -43,5 +43,5 @@
   "triggers": ["https://www.youtube.com/watch?v="],
   "noteNameFormat": "{{schema:name ?? title}}",
   "path": "0 - Inbox",
-  "context": "{{content}}"
+  "context": "{{selectorHtml:ytd-engagement-panel-section-list-renderer[visibility$=\"EXPANDED\"]|markdown}}\n\n{{content}}"
 }
