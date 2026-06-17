@@ -1,27 +1,27 @@
 {
-	"schemaVersion": "0.1.0",
-	"name": "Documentation",
-	"behavior": "create",
-	"noteContentFormat": "# Summary\n\n{{\"Summarize what this documentation covers and its key concepts in bullet points. Any references to libraries, frameworks, or tools should be in [[wikilinks]] format.\"}}\n\n---\n\n# Key Concepts\n\n{{\"Extract the key concepts, APIs, or patterns from this documentation as a concise bullet list.\"}}\n\n---\n\n# Code Examples\n```\n{{selection}}\n```\n\n---\n\n# Notes\n- \n\n---\n\n# Related\n- ",
-	"properties": [
-		{
-			"name": "source",
-			"value": "{{url}}",
-			"type": "text"
-		},
-		{
-			"name": "created",
-			"value": "{{date}}",
-			"type": "date"
-		},
-		{
-			"name": "tags",
-			"value": "clipping, documentation",
-			"type": "multitext"
-		}
-	],
-	"triggers": [],
-	"noteNameFormat": "{{title}}",
-	"path": "0 - Inbox",
-	"context": "{{content}}"
+  "schemaVersion": "0.1.0",
+  "name": "Documentation",
+  "behavior": "create",
+  "noteContentFormat": "# Summary\n\n{{\"Summarize what this documentation covers and its key concepts in bullet points. Any references to libraries, frameworks, or tools should be in [[wikilinks]] format.\"}}\n\n---\n\n# Key Concepts\n\n{{\"Extract the key concepts, APIs, or patterns from this documentation as a concise bullet list.\"}}\n\n---\n\n# Code Examples\n\n{{\"Reproduce every code block from this documentation verbatim, without changing, reformatting, summarizing, or omitting any code. Add the correct language identifier to each opening fence (tsx, ts, js, jsx, json, bash, etc.) inferred from the code. If there are no code blocks, write: None.\"}}\n\n---\n\n# Notes\n- \n\n---\n\n# Reference\n\n{{content}}\n\n---\n\n# Related\n-",
+  "properties": [
+    {
+      "name": "source",
+      "value": "{{url}}",
+      "type": "text"
+    },
+    {
+      "name": "created",
+      "value": "{{date}}",
+      "type": "date"
+    },
+    {
+      "name": "tags",
+      "value": "clipping, documentation",
+      "type": "multitext"
+    }
+  ],
+  "triggers": [],
+  "noteNameFormat": "{{title}}",
+  "path": "0 - Inbox",
+  "context": "{{content}}"
 }
