@@ -26,8 +26,7 @@
 		}
 	],
 	"triggers": [
-		"https://x.com",
-		"https://twitter.com"
+		"/^https:\\/\\/(?:x|twitter)\\.com\\/[^\\/?#]+\\/status\\/\\d+(?:[/?#]|$)/"
 	],
 	"noteNameFormat": "{{author}} - {{title|safe_name}}",
 	"path": "0 - Inbox",

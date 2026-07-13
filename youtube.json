@@ -40,7 +40,7 @@
       "type": "multitext"
     }
   ],
-  "triggers": ["https://www.youtube.com/watch?v="],
+  "triggers": ["/^https:\\/\\/(?:www\\.)?youtube\\.com\\/watch\\?[^#]*\\bv=/"],
   "noteNameFormat": "{{schema:name ?? title}}",
   "path": "0 - Inbox",
   "context": "{{selectorHtml:ytd-engagement-panel-section-list-renderer[visibility$=\"EXPANDED\"]|markdown}}\n\n{{content}}"

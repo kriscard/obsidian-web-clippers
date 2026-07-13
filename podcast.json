@@ -26,10 +26,10 @@
 		}
 	],
 	"triggers": [
-		"https://podcasts.apple.com",
-		"https://open.spotify.com",
-		"https://overcast.fm",
-		"https://pocketcasts.com"
+		"/^https:\\/\\/podcasts\\.apple\\.com\\//",
+		"/^https:\\/\\/open\\.spotify\\.com\\/(?:episode|show)\\//",
+		"/^https:\\/\\/overcast\\.fm\\//",
+		"/^https:\\/\\/pocketcasts\\.com\\//"
 	],
 	"noteNameFormat": "{{title|safe_name}}",
 	"path": "0 - Inbox",

@@ -2,7 +2,7 @@
 	"schemaVersion": "0.1.0",
 	"name": "GitHub Repo",
 	"behavior": "create",
-	"noteContentFormat": "# Summary\n\n{{\"Summarize what this GitHub repository does, its key features, and use cases in bullet points. Any references to technologies, frameworks, or tools should be in [[wikilinks]] format.\"}}\n\n---\n\n# Installation\n\n{{\"Extract the installation or getting started instructions from the README. Format as a code block if applicable. If not found, write: See README for setup.\"}}\n\n---\n\n# Notes\n- \n\n---\n\n# Related\n- ",
+	"noteContentFormat": "# Overview\n\n{{\"In no more than 90 words, explain what this repository is, the problem it solves, its primary runtime/deployment target, and its maturity or scope qualifiers. Preserve adoption-critical trade-offs. Use [[wikilinks]] only for major concepts.\"}}\n\n---\n\n# Migration & Operations\n\n{{\"In no more than 220 words, give the recommended new-project and existing-project workflows. Include only the essential setup, validation, development, build, and deployment commands in short bash blocks. Then list the highest-value automated migration changes, defaults, platform choices, and non-destructive guarantees. Do not produce a command table, manual-install alternatives, or duplicate commands.\"}}\n\n---\n\n# Compatibility & Trade-offs\n\n{{\"In no more than 220 words, use three labelled bullet groups: **Supported**, **Gaps**, and **Excluded or alternatives**. Capture the most consequential supported features, compatibility limits, version/deployment caveats, and README-named alternatives. Do not enumerate every API.\"}}\n\n---\n\n# Architecture & Evidence\n\n{{\"In no more than 110 words, explain the technical model, the major runtime/build components, and the strongest documented validation evidence (tests, compatibility coverage, live examples, or benchmark caveats). Include numbers only if the README states them.\"}}\n\n---\n\n# Integration Examples\n\n## Primary runtime or API\n\n```\n{{\"Return only one representative source-code excerpt for the primary runtime or API integration. Do not include a Markdown fence, prose, or a language label. Keep it to 10 lines or fewer and preserve ordinary source-code quotes. If none exists, return: None.\"}}\n```\n\n## Deployment or production configuration\n\n```\n{{\"Return only one short source-code excerpt for deployment or production configuration. Do not include a Markdown fence, prose, or a language label. Keep it to 10 lines or fewer and preserve ordinary source-code quotes. Prefer a minimal configuration over a long complete file. If none exists, return: None.\"}}\n```\n\n---\n\n# Notes\n- \n\n---\n\n# Related\n- ",
 	"properties": [
 		{
 			"name": "tags",
@@ -26,7 +26,7 @@
 		}
 	],
 	"triggers": [
-		"github.com"
+		"/^https:\\/\\/github\\.com\\/[^\\/?#]+\\/[^\\/?#]+\\/?(?:[?#].*)?$/"
 	],
 	"noteNameFormat": "{{title}}",
 	"path": "0 - Inbox",

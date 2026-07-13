@@ -61,10 +61,10 @@
 		}
 	],
 	"triggers": [
-		"goodreads.com",
-		"amazon.com/dp",
-		"amazon.ca/dp",
-		"app.thestorygraph.com"
+		"/^https:\\/\\/(?:www\\.)?goodreads\\.com\\/book\\//",
+		"/^https:\\/\\/(?:www\\.)?amazon\\.com\\/(?:.*\\/)?dp\\//",
+		"/^https:\\/\\/(?:www\\.)?amazon\\.ca\\/(?:.*\\/)?dp\\//",
+		"/^https:\\/\\/app\\.thestorygraph\\.com\\/books\\//"
 	],
 	"noteNameFormat": "{{title}}",
 	"path": "0 - Inbox",
