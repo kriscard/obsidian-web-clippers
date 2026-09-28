@@ -29,6 +29,6 @@
 		"/^https:\\/\\/(?:x|twitter)\\.com\\/[^\\/?#]+\\/status\\/\\d+(?:[/?#]|$)/"
 	],
 	"noteNameFormat": "{{author}} - {{title|safe_name}}",
-	"path": "0 - Inbox",
+	"path": "0 - Inbox/web-clippers",
 	"context": "{{content}}"
 }

@@ -22,6 +22,6 @@
   ],
   "triggers": [],
   "noteNameFormat": "{{title}}",
-  "path": "0 - Inbox",
+  "path": "0 - Inbox/web-clippers",
   "context": "{{content}}"
 }
