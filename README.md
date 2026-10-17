@@ -27,6 +27,6 @@ Each template uses the **Interpreter** feature — an AI-powered step that summa
 
 - **YouTube**: Open the transcript panel before clipping for best results
 - **Books**: `year`, `pages`, `genre`, and `isbn` need to be filled in manually after clipping
-- **GitHub**: Works best on repo root pages where the README is visible
+- **GitHub**: Captures the rendered README from repository roots and standard `/tree/<branch>/<path>` package pages. Make sure the README is visible before clipping.
 - **Triggers**: Automatic templates use URL regexes. Keep specific templates above broad ones in Web Clipper settings, because the first match wins; re-import templates after updating them.
 - Templates without triggers (Article, Documentation) need to be selected manually from the clipper dropdown
