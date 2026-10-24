@@ -25,7 +25,7 @@ Each template uses the **Interpreter** feature — an AI-powered step that summa
 
 ## Tips
 
-- **YouTube**: Open the transcript panel before clipping for best results
+- **YouTube**: Open the transcript panel before clipping for best results. Clips use Obsidian's native video player syntax; update Obsidian if players render as blank space.
 - **Books**: `year`, `pages`, `genre`, and `isbn` need to be filled in manually after clipping
 - **GitHub**: Captures the rendered README from repository roots and standard `/tree/<branch>/<path>` package pages. Make sure the README is visible before clipping.
 - **Triggers**: Automatic templates use URL regexes. Keep specific templates above broad ones in Web Clipper settings, because the first match wins; re-import templates after updating them.
